@@ -3,20 +3,36 @@ using UnityEngine;
 public class AudioFloat : MonoBehaviour
 {
 
-    public float floatForce = 1f;
-    public Vector3 maxPosition;
-    public Vector3 minPosition;
+    public float floatStrength = 5f;
+    public float ampCutoff = 0.4f;
 
-    private Vector3 targetPosition;
+    public float randomnessIntensity = 0.1f;
+
+    private Rigidbody rb;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+
+        floatStrength += Random.Range(-2f, 2f);
+    }
 
     private void Update()
     {
         Debug.Log(AudioSpectrum.audioAmp);
 
-        targetPosition = Vector3.Lerp(minPosition, maxPosition, AudioSpectrum.audioAmp);
 
-        float moveDistance = Vector3.Distance(transform.position, targetPosition) / 360;
+        if(AudioSpectrum.audioAmp > ampCutoff)
+        {
+            // Incorporate randomness to make each balloon slightly different
+            float randomX = Random.Range(-randomnessIntensity, randomnessIntensity);
+            float randomY = Random.Range(0, randomnessIntensity);
+            float randomZ = Random.Range(-randomnessIntensity, randomnessIntensity);
 
-        transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveDistance);
+
+            Vector3 forceDirection = new Vector3(randomX, AudioSpectrum.audioAmp * floatStrength + randomY, randomZ);
+            rb.AddForce(forceDirection, ForceMode.Acceleration);
+        }
+        
     }
 }
