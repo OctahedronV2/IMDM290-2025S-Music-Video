@@ -15,6 +15,12 @@ public class AudioFloat : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
         floatStrength += Random.Range(-2f, 2f);
+        ampCutoff = Random.Range(0.25f, 0.7f);
+
+        if(ampCutoff <= 0.4f)
+        {
+            ampCutoff += 0.1f;
+        }
     }
 
     private void Update()
@@ -29,8 +35,10 @@ public class AudioFloat : MonoBehaviour
             float randomY = Random.Range(0, randomnessIntensity);
             float randomZ = Random.Range(-randomnessIntensity, randomnessIntensity);
 
+            float distanceToMaxHeight = 11 - transform.position.y;
+            float curStrength = Mathf.Max(0, floatStrength / 10 * distanceToMaxHeight);
 
-            Vector3 forceDirection = new Vector3(randomX, AudioSpectrum.audioAmp * floatStrength + randomY, randomZ);
+            Vector3 forceDirection = new Vector3(randomX, AudioSpectrum.audioAmp * curStrength + randomY, randomZ);
             rb.AddForce(forceDirection, ForceMode.Acceleration);
         }
         
