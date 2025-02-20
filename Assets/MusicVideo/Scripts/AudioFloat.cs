@@ -15,7 +15,6 @@ public class AudioFloat : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
         floatStrength += Random.Range(-2f, 2f);
-        ampCutoff = Random.Range(0.25f, 0.7f);
 
         if(ampCutoff <= 0.4f)
         {
@@ -25,9 +24,6 @@ public class AudioFloat : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(AudioSpectrum.audioAmp);
-
-
         if(AudioSpectrum.audioAmp > ampCutoff)
         {
             // Incorporate randomness to make each balloon slightly different
