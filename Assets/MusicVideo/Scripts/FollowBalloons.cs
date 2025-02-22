@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class FollowBalloons : MonoBehaviour
 {
+
+    public float zoomDistance = 15f;
+
     // Update is called once per frame
     void Update()
     {
@@ -16,6 +19,6 @@ public class FollowBalloons : MonoBehaviour
 
         Vector3 targetPosition = positionSum / balloons.Length;
 
-        transform.position = new Vector3(targetPosition.x, targetPosition.y, -30);
+        transform.position = new Vector3(targetPosition.x, targetPosition.y, -zoomDistance);
     }
 }
