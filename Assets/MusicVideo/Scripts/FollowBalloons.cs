@@ -40,6 +40,8 @@ public class FollowBalloons : MonoBehaviour
         Vector3 proxyTarget = positionSum / balloons.Length;
         targetPosition = new Vector3(proxyTarget.x, proxyTarget.y, -zoomDistance);
 
+        if (balloons.Length == 0) targetPosition = new Vector3(transform.position.x, transform.position.y - 0.01f, -zoomDistance);
+
         float distanceToTargetPos = Vector3.Distance(transform.position, targetPosition);
 
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, distanceToTargetPos / smoothingFactor);

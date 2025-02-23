@@ -235,6 +235,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 4633910453746216273, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3cd67afc8e75e4d158e19d7815059eeb, type: 2}
     - target: {fileID: 5088398131922355373, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -289,6 +293,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2088229548446403285, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1171635736}
+    - targetCorrespondingSourceObject: {fileID: 2088229548446403285, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1171635742}
   m_SourcePrefab: {fileID: 100100000, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
 --- !u!4 &403169046 stripped
 Transform:
@@ -794,6 +801,19 @@ MonoBehaviour:
   forcefieldDistance: 4
   forcefieldStrength: 4
   minDistance: 0.2
+--- !u!114 &1171635742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171635730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b630f9d867194013a9b45e608aa9f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 245
 --- !u!1 &1588244462
 GameObject:
   m_ObjectHideFlags: 0
