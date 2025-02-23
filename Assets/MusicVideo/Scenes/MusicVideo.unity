@@ -213,11 +213,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4376459684665534174, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
       propertyPath: ampCutoff
-      value: 0.35
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376459684665534174, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
+      propertyPath: maxHeight
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4376459684665534174, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
       propertyPath: floatStrength
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 4389712009495111847, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
       propertyPath: m_Layer
@@ -443,7 +447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomDistance: 15
-  smoothingFactor: 30
+  smoothingFactor: 1
 --- !u!114 &450039681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,8 +522,16 @@ PrefabInstance:
       value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4376459684665534174, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
+      propertyPath: ampCutoff
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376459684665534174, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
+      propertyPath: maxHeight
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376459684665534174, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
       propertyPath: floatStrength
-      value: 60
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 7498137317230822061, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
       propertyPath: audioSource
@@ -779,8 +791,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4a8a8686d6b34d49a1e2910b20e4cd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forcefieldDistance: 3
-  forcefieldStrength: 2.5
+  forcefieldDistance: 4
+  forcefieldStrength: 4
   minDistance: 0.2
 --- !u!1 &1588244462
 GameObject:
@@ -1203,13 +1215,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 2088229548446403285, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
+      propertyPath: m_TagString
+      value: Balloon
+      objectReference: {fileID: 0}
     - target: {fileID: 4376459684665534174, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
       propertyPath: ampCutoff
-      value: 0.375
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376459684665534174, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
+      propertyPath: maxHeight
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4376459684665534174, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
       propertyPath: floatStrength
-      value: 60
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 7498137317230822061, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
       propertyPath: audioSource

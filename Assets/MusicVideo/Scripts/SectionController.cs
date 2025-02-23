@@ -50,8 +50,8 @@ public class SectionController : MonoBehaviour
                 de.mode = DelayedEntrance.Mode.Enter;
             }
 
-            redBalloon.GetComponent<AudioFloat>().ampCutoff -= 0.1f;
-            blueBalloonClone.GetComponent<AudioFloat>().ampCutoff -= 0.1f;
+            redBalloon.GetComponent<AudioFloat>().ampCutoff = 0.05f;
+            blueBalloonClone.GetComponent<AudioFloat>().ampCutoff = 0.05f;
 
             StopCoroutine(SpawnBalloons());
         }
@@ -82,14 +82,13 @@ public class SectionController : MonoBehaviour
             float randomY = cameraPos.position.y - 20 + Random.Range(-5f, 0f);
             float randomZ = Random.Range(-3f, 3f);
 
-            float randomFloatStrength = Random.Range(8f, 14f);
+            float randomFloatStrength = Random.Range(130f, 160f);
 
             balloon.transform.position = new Vector3(randomX, randomY, randomZ);
 
             AudioFloat af = balloon.GetComponent<AudioFloat>();
             af.floatStrength = randomFloatStrength;
-            af.maxHeight = 200f;
-            af.ampCutoff = Random.Range(0f, 0.15f);
+            af.ampCutoff = Random.Range(0f, 0.1f);
 
             balloon.GetComponent<Renderer>().material.color = new Color(0.2f, 0.7f, 0.2f);
 

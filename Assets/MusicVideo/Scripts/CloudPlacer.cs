@@ -12,7 +12,7 @@ public class CloudPlacer : MonoBehaviour
     void Start()
     {
         spawnedCloudPositions = new List<Vector3>();
-        for(int i = 0; i < 2000; i++)
+        for(int i = 0; i < 500; i++)
         {
 
             float randomX = Random.Range(-50, 50);
@@ -35,7 +35,7 @@ public class CloudPlacer : MonoBehaviour
 
                 foreach (Vector3 pastPos in spawnedCloudPositions)
                 {
-                    if (Vector3.Distance(pastPos, cloudPosition) <= 6f)
+                    if (Vector3.Distance(pastPos, cloudPosition) <= 12f)
                     {
                         validPos = false;
                     }
