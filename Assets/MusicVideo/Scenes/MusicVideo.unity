@@ -443,6 +443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zoomDistance: 15
+  smoothingFactor: 30
 --- !u!114 &450039681
 MonoBehaviour:
   m_ObjectHideFlags: 0
