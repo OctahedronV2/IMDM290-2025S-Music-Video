@@ -17,7 +17,7 @@ public class AudioFloat : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if(AudioSpectrum.audioAmp > ampCutoff)
         {

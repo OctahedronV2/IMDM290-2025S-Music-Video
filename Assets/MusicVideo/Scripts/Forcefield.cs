@@ -25,7 +25,7 @@ public class Forcefield : MonoBehaviour
         objectsInField.Remove(other.gameObject);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         foreach(GameObject obj in objectsInField)
         {

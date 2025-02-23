@@ -76,7 +76,7 @@ public class SectionController : MonoBehaviour
             float randomY = cameraPos.position.y - 20 + Random.Range(-5f, 0f);
             float randomZ = Random.Range(-3f, 3f);
 
-            float randomFloatStrength = Random.Range(3f, 5f);
+            float randomFloatStrength = Random.Range(8f, 14f);
 
             balloon.transform.position = new Vector3(randomX, randomY, randomZ);
 

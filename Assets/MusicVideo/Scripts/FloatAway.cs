@@ -12,13 +12,13 @@ public class FloatAway : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         timeElapsed += Time.deltaTime;
         if(timeElapsed > delay)
         {
             gameObject.tag = "Untagged";
-            rb.AddForce(new Vector3(0.2f, 0.8f, 0.4f));
+            rb.AddForce(new Vector3(0.6f, 2.4f, 1.2f));
         }
     }
 }

@@ -213,11 +213,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4376459684665534174, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
       propertyPath: ampCutoff
-      value: 0.45
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 4376459684665534174, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
       propertyPath: floatStrength
-      value: 20
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4389712009495111847, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
       propertyPath: m_Layer
@@ -513,6 +513,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 4376459684665534174, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
+      propertyPath: floatStrength
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 7498137317230822061, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
       propertyPath: audioSource
       value: 
@@ -546,7 +550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followTarget: {fileID: 1171635730}
-  enterSpeed: 1
+  enterSpeed: 3
   mode: 0
 --- !u!114 &867360568
 MonoBehaviour:
@@ -1181,11 +1185,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4376459684665534174, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
       propertyPath: ampCutoff
-      value: 0.4
+      value: 0.375
       objectReference: {fileID: 0}
     - target: {fileID: 4376459684665534174, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
       propertyPath: floatStrength
-      value: 12
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 7498137317230822061, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
       propertyPath: audioSource

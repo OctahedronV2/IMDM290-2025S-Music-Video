@@ -16,7 +16,7 @@ public class DelayedEntrance : MonoBehaviour
     public Mode mode;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (mode == Mode.Follow)
         {
@@ -27,7 +27,7 @@ public class DelayedEntrance : MonoBehaviour
 
             float distance = Vector3.Distance(followTarget.transform.position, transform.position);
 
-            if (distance < 4f)
+            if (distance < 2.5f)
             {
                 tag = "Balloon";
                 mode = DelayedEntrance.Mode.Disabled;
