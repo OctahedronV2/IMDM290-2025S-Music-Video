@@ -281,7 +281,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 43194710540356083, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1623554113}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2088229548446403285, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1171635736}
   m_SourcePrefab: {fileID: 100100000, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
 --- !u!4 &403169046 stripped
 Transform:
@@ -740,6 +743,7 @@ MonoBehaviour:
   climaxTime: 160
   resolutionTime: 197
   balloonSpawner: {fileID: 450039681}
+  redBalloon: {fileID: 1171635730}
   blueBalloonClone: {fileID: 867360559}
   cameraPos: {fileID: 450039678}
 --- !u!4 &1135232981
@@ -762,6 +766,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2088229548446403285, guid: 5bcc67a5bb4e14464a700e1d91b57bd3, type: 3}
   m_PrefabInstance: {fileID: 121493583}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1171635736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171635730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4a8a8686d6b34d49a1e2910b20e4cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forcefieldDistance: 3
+  forcefieldStrength: 2.5
+  minDistance: 0.2
 --- !u!1 &1588244462
 GameObject:
   m_ObjectHideFlags: 0

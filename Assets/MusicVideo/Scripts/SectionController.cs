@@ -9,6 +9,7 @@ public class SectionController : MonoBehaviour
     public float resolutionTime = 197f;
 
     public BalloonSpawner balloonSpawner;
+    public GameObject redBalloon;
     public GameObject blueBalloonClone;
     public Transform cameraPos;
 
@@ -49,6 +50,9 @@ public class SectionController : MonoBehaviour
                 de.mode = DelayedEntrance.Mode.Enter;
             }
 
+            redBalloon.GetComponent<AudioFloat>().ampCutoff -= 0.1f;
+            blueBalloonClone.GetComponent<AudioFloat>().ampCutoff -= 0.1f;
+
             StopCoroutine(SpawnBalloons());
         }
 
@@ -56,6 +60,8 @@ public class SectionController : MonoBehaviour
         {
             Debug.Log("Changing to Resolution section");
             sec = Section.Resolution;
+
+            redBalloon.GetComponent<AudioFloat>().ampCutoff += 0.5f;
         }
 
         if(sec == Section.Resolution)
