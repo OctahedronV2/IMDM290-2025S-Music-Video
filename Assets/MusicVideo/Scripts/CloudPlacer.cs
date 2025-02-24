@@ -12,10 +12,10 @@ public class CloudPlacer : MonoBehaviour
     void Start()
     {
         spawnedCloudPositions = new List<Vector3>();
-        for(int i = 0; i < 500; i++)
+        for(int i = 0; i < 750; i++)
         {
 
-            float randomX = Random.Range(-50, 50);
+            float randomX = Random.Range(-100, 100);
             float randomY = Random.Range(-200, 200);
             float randomZ = Random.Range(8, 35);
 
@@ -27,7 +27,7 @@ public class CloudPlacer : MonoBehaviour
             {
                 validPos = true;
 
-                randomX = Random.Range(-50, 50);
+                randomX = Random.Range(-100, 100);
                 randomY = Random.Range(-200, 200);
                 randomZ = Random.Range(10, 35);
 

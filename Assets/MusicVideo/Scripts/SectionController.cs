@@ -93,8 +93,6 @@ public class SectionController : MonoBehaviour
             af.floatStrength = randomFloatStrength;
             af.ampCutoff = Random.Range(0f, 0.075f);
 
-            balloon.GetComponent<Renderer>().material.color = new Color(0.2f, 0.7f, 0.2f);
-
             balloon.tag = "Untagged";
             yield return new WaitForSeconds(0.25f);
         }

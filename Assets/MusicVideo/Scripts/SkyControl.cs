@@ -26,6 +26,12 @@ public class SkyControl : MonoBehaviour
         StartCoroutine(ColorChangeRoutine());
     }
 
+    private void OnApplicationQuit()
+    {
+        material1.color = originalColor1;
+        material2.color = originalColor2;
+    }
+
     private IEnumerator ColorChangeRoutine()
     {
         //Wait before starting the color change.
