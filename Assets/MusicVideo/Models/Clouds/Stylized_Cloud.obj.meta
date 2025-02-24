@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Stylized_CloudMat
-    second: {fileID: 2100000, guid: 6034f926e966143baaf8095df620a30a, type: 2}
+    second: {fileID: 2100000, guid: 2a8f4031bd4884de588d09c80c5eea3d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
