@@ -6,6 +6,6 @@ Video:
 https://github.com/OctahedronV2/IMDM290-2025S-Music-Video/blob/main/Video.mov
 
 All of the Assets:
-
+https://github.com/OctahedronV2/IMDM290-2025S-Music-Video/tree/main/Assets
 
 Unity Project:
