@@ -1,8 +1,6 @@
-![heart](https://github.com/user-attachments/assets/f0c91918-60bf-4130-a0e5-c473b6071378)
+IMDM290 Music Video Project
+By: Jake Farr & Max Davenport
+<img width="1355" alt="Screenshot 2025-02-24 at 7 50 06 PM" src="https://github.com/user-attachments/assets/856d900b-d19a-4d1e-aa87-55170643ca57" />
 
-IMDM 290 
+Video:
 
-2025 Spring
-
-Course Material 
-![Untitled video - Made with Clipchamp (8)](https://github.com/user-attachments/assets/f862236a-a226-4e8f-8bfd-47c7161032da)
